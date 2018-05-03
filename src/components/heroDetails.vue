@@ -3,7 +3,7 @@
     <!--我是测试test-->
     <!--<span class="demonstration">默认 Hover 指示器触发</span>-->
     <el-carousel height="632px" :autoplay=false>
-      <el-carousel-item v-if="herosDetails" v-for="(index,item) of herosDetailsx" :key="index">
+      <el-carousel-item v-if="herosDetails" v-for="(item,index) of herosDetailsx" :key="index">
         <div :style="styleObject">
           <img :src="imgDZ+item.id+'.jpg'" alt="">
         </div>
